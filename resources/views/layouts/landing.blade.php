@@ -4,23 +4,23 @@
     // Theme colors per business type
     $landingThemes = [
         'clinic' => [
-            'primary' => 'rose',
-            'gradient_from' => 'from-rose-500',
-            'gradient_to' => 'to-primary-600',
-            'bg_light' => 'bg-rose-100',
-            'bg_50' => 'bg-rose-50',
-            'text' => 'text-rose-600',
-            'text_700' => 'text-rose-700',
-            'border' => 'border-rose-100',
-            'border_400' => 'border-rose-400',
-            'hover_bg' => 'hover:bg-rose-50',
-            'hover_text' => 'hover:text-rose-600',
-            'shadow' => 'shadow-rose-200',
-            'hover_shadow' => 'hover:shadow-rose-200',
-            'group_hover_shadow' => 'group-hover:shadow-rose-300',
-            'bg_gradient_1' => 'from-rose-200/40 to-primary-200/30',
-            'bg_gradient_2' => 'from-rose-100/50 to-peach/50',
-            'bg_gradient_3' => 'from-primary-100/30 to-rose-100/30',
+            'primary' => 'primary',
+            'gradient_from' => 'from-primary-500',
+            'gradient_to' => 'to-primary-400',
+            'bg_light' => 'bg-primary-100',
+            'bg_50' => 'bg-primary-50',
+            'text' => 'text-primary-600',
+            'text_700' => 'text-primary-700',
+            'border' => 'border-primary-100',
+            'border_400' => 'border-primary-400',
+            'hover_bg' => 'hover:bg-primary-50',
+            'hover_text' => 'hover:text-primary-600',
+            'shadow' => 'shadow-primary-200',
+            'hover_shadow' => 'hover:shadow-primary-200',
+            'group_hover_shadow' => 'group-hover:shadow-primary-300',
+            'bg_gradient_1' => 'from-primary-200/40 to-sage/30',
+            'bg_gradient_2' => 'from-primary-100/50 to-sand/50',
+            'bg_gradient_3' => 'from-primary-100/30 to-sage/20',
         ],
         'salon' => [
             'primary' => 'purple',
@@ -42,23 +42,23 @@
             'bg_gradient_3' => 'from-violet-100/30 to-purple-100/30',
         ],
         'barbershop' => [
-            'primary' => 'blue',
-            'gradient_from' => 'from-blue-500',
-            'gradient_to' => 'to-blue-600',
-            'bg_light' => 'bg-blue-100',
-            'bg_50' => 'bg-blue-50',
-            'text' => 'text-blue-600',
-            'text_700' => 'text-blue-700',
-            'border' => 'border-blue-200',
-            'border_400' => 'border-blue-500',
-            'hover_bg' => 'hover:bg-blue-50',
-            'hover_text' => 'hover:text-blue-600',
-            'shadow' => 'shadow-blue-200',
-            'hover_shadow' => 'hover:shadow-blue-200',
-            'group_hover_shadow' => 'group-hover:shadow-blue-300',
-            'bg_gradient_1' => 'from-blue-200/30 to-sky-200/25',
-            'bg_gradient_2' => 'from-blue-100/40 to-sky-100/35',
-            'bg_gradient_3' => 'from-sky-100/25 to-blue-100/25',
+            'primary' => 'slate',
+            'gradient_from' => 'from-slate-700',
+            'gradient_to' => 'to-slate-900',
+            'bg_light' => 'bg-slate-100',
+            'bg_50' => 'bg-slate-50',
+            'text' => 'text-slate-700',
+            'text_700' => 'text-slate-800',
+            'border' => 'border-slate-200',
+            'border_400' => 'border-slate-500',
+            'hover_bg' => 'hover:bg-slate-50',
+            'hover_text' => 'hover:text-slate-700',
+            'shadow' => 'shadow-slate-200',
+            'hover_shadow' => 'hover:shadow-slate-200',
+            'group_hover_shadow' => 'group-hover:shadow-slate-300',
+            'bg_gradient_1' => 'from-slate-200/30 to-slate-300/25',
+            'bg_gradient_2' => 'from-slate-100/40 to-slate-200/35',
+            'bg_gradient_3' => 'from-slate-100/25 to-slate-200/25',
         ],
     ];
 
@@ -75,10 +75,17 @@
         <link rel="icon" type="image/x-icon" href="{{ brand_logo('favicon') }}">
     @endif
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts — Velucia Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO & OG Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@yield('title', brand_name() . ' — ' . brand_tagline())">
+    <meta property="og:description" content="@yield('description', brand_description())">
+    <meta name="theme-color" content="#5D4157">
+    <meta name="msapplication-TileColor" content="#5D4157">
 
     <!-- Vite Assets -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

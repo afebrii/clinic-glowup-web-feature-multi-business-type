@@ -14,7 +14,7 @@ return [
 
     // Application Identity
     'app' => [
-        'name' => env('APP_BRAND_NAME', 'GlowUp'),
+        'name' => env('APP_BRAND_NAME', 'Velucia'),
         'tagline' => env('APP_BRAND_TAGLINE', 'Beauty & Wellness Management'),
         'tagline_id' => env('APP_BRAND_TAGLINE_ID', 'Manajemen Kecantikan & Wellness'),
         'description' => env('APP_BRAND_DESCRIPTION', 'Complete management system for beauty clinics, salons, and barbershops'),
@@ -33,11 +33,11 @@ return [
 
     // Default Theme Colors (can be overridden per business type)
     'colors' => [
-        'primary' => env('APP_COLOR_PRIMARY', '#f43f5e'), // Rose-500
-        'primary_hover' => env('APP_COLOR_PRIMARY_HOVER', '#e11d48'), // Rose-600
-        'primary_light' => env('APP_COLOR_PRIMARY_LIGHT', '#fff1f2'), // Rose-50
+        'primary' => env('APP_COLOR_PRIMARY', '#5D4157'), // Deep Plum
+        'primary_hover' => env('APP_COLOR_PRIMARY_HOVER', '#4a3346'), // Deep Plum Darker
+        'primary_light' => env('APP_COLOR_PRIMARY_LIGHT', '#f5f0f4'), // Primary-50
         'secondary' => env('APP_COLOR_SECONDARY', '#6b7280'), // Gray-500
-        'accent' => env('APP_COLOR_ACCENT', '#8b5cf6'), // Violet-500
+        'accent' => env('APP_COLOR_ACCENT', '#A8CABA'), // Sage Green
         'success' => env('APP_COLOR_SUCCESS', '#22c55e'), // Green-500
         'warning' => env('APP_COLOR_WARNING', '#f59e0b'), // Amber-500
         'danger' => env('APP_COLOR_DANGER', '#ef4444'), // Red-500
@@ -46,14 +46,14 @@ return [
 
     // Tailwind CSS Classes (for easy theming)
     'tailwind' => [
-        'primary' => env('APP_TW_PRIMARY', 'rose'),
-        'gradient_from' => env('APP_TW_GRADIENT_FROM', 'from-rose-400'),
-        'gradient_to' => env('APP_TW_GRADIENT_TO', 'to-rose-500'),
+        'primary' => env('APP_TW_PRIMARY', 'primary'),
+        'gradient_from' => env('APP_TW_GRADIENT_FROM', 'from-primary-500'),
+        'gradient_to' => env('APP_TW_GRADIENT_TO', 'to-primary-400'),
     ],
 
     // Contact Information
     'contact' => [
-        'email' => env('APP_CONTACT_EMAIL', 'support@glowup.app'),
+        'email' => env('APP_CONTACT_EMAIL', 'support@velucia.app'),
         'phone' => env('APP_CONTACT_PHONE', null),
         'whatsapp' => env('APP_CONTACT_WHATSAPP', null),
         'address' => env('APP_CONTACT_ADDRESS', null),
@@ -74,8 +74,8 @@ return [
         'copyright' => env('APP_FOOTER_COPYRIGHT', '© :year :app_name. All rights reserved.'),
         'copyright_id' => env('APP_FOOTER_COPYRIGHT_ID', '© :year :app_name. Hak cipta dilindungi.'),
         'show_powered_by' => env('APP_FOOTER_SHOW_POWERED_BY', true),
-        'powered_by_text' => env('APP_FOOTER_POWERED_BY', 'Powered by GlowUp'),
-        'powered_by_url' => env('APP_FOOTER_POWERED_BY_URL', 'https://glowup.app'),
+        'powered_by_text' => env('APP_FOOTER_POWERED_BY', 'Powered by Velucia'),
+        'powered_by_url' => env('APP_FOOTER_POWERED_BY_URL', 'https://velucia.app'),
     ],
 
     // Landing Page

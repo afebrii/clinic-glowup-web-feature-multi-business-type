@@ -11,7 +11,7 @@
             color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f8f4f0;
+            background-color: #F4E7D3;
         }
         .container {
             max-width: 600px;
@@ -47,7 +47,7 @@
             color: #4b5563;
         }
         .otp-box {
-            background: linear-gradient(135deg, {{ brand_color('primary_light') }} 0%, #fef3f2 100%);
+            background: linear-gradient(135deg, #f5f0f4 0%, #e8dce6 100%);
             border-radius: 12px;
             padding: 30px;
             text-align: center;

@@ -40,18 +40,18 @@ return [
 
             // Theme colors (Tailwind classes)
             'theme' => [
-                'primary' => 'pink',
-                'primary_hex' => '#ec4899',
-                'gradient_from' => 'from-pink-500',
-                'gradient_to' => 'to-rose-500',
-                'bg_light' => 'bg-pink-50',
-                'bg_medium' => 'bg-pink-100',
-                'text_primary' => 'text-pink-600',
-                'text_dark' => 'text-pink-700',
-                'border' => 'border-pink-200',
-                'ring' => 'ring-pink-500',
-                'button' => 'bg-pink-600 hover:bg-pink-700',
-                'button_outline' => 'border-pink-600 text-pink-600 hover:bg-pink-50',
+                'primary' => 'primary',
+                'primary_hex' => '#5D4157',
+                'gradient_from' => 'from-primary-500',
+                'gradient_to' => 'to-primary-400',
+                'bg_light' => 'bg-primary-50',
+                'bg_medium' => 'bg-primary-100',
+                'text_primary' => 'text-primary-600',
+                'text_dark' => 'text-primary-700',
+                'border' => 'border-primary-200',
+                'ring' => 'ring-primary-500',
+                'button' => 'bg-primary-600 hover:bg-primary-700',
+                'button_outline' => 'border-primary-600 text-primary-600 hover:bg-primary-50',
             ],
 
             // Customer profile fields

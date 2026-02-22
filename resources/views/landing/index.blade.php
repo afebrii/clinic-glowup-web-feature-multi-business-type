@@ -6,30 +6,30 @@
     // Theme colors per business type
     $landingThemes = [
         'clinic' => [
-            'primary' => 'rose',
-            'gradient_from' => 'from-rose-500',
-            'gradient_to' => 'to-primary-600',
-            'bg_light' => 'bg-rose-100',
-            'bg_50' => 'bg-rose-50',
-            'text' => 'text-rose-600',
-            'text_700' => 'text-rose-700',
-            'text_300' => 'text-rose-300',
-            'text_400' => 'text-rose-400',
-            'border' => 'border-rose-100',
-            'border_200' => 'border-rose-200',
-            'border_400' => 'border-rose-400',
-            'hover_bg' => 'hover:bg-rose-50',
-            'hover_text' => 'hover:text-rose-600',
-            'dark_hover_text' => 'dark:hover:text-rose-400',
-            'shadow' => 'shadow-rose-200',
-            'hover_shadow' => 'hover:shadow-rose-200',
-            'hover_shadow_xl' => 'hover:shadow-rose-500/30',
-            'group_hover_shadow' => 'group-hover:shadow-rose-300',
-            'fill' => 'fill-rose-500',
-            'bg_500' => 'bg-rose-500',
-            'bg_500_10' => 'bg-rose-500/10',
-            'bg_500_20' => 'bg-rose-500/20',
-            'bg_400' => 'bg-rose-400',
+            'primary' => 'primary',
+            'gradient_from' => 'from-primary-500',
+            'gradient_to' => 'to-primary-400',
+            'bg_light' => 'bg-primary-100',
+            'bg_50' => 'bg-primary-50',
+            'text' => 'text-primary-600',
+            'text_700' => 'text-primary-700',
+            'text_300' => 'text-primary-300',
+            'text_400' => 'text-primary-400',
+            'border' => 'border-primary-100',
+            'border_200' => 'border-primary-200',
+            'border_400' => 'border-primary-400',
+            'hover_bg' => 'hover:bg-primary-50',
+            'hover_text' => 'hover:text-primary-600',
+            'dark_hover_text' => 'dark:hover:text-primary-400',
+            'shadow' => 'shadow-primary-200',
+            'hover_shadow' => 'hover:shadow-primary-200',
+            'hover_shadow_xl' => 'hover:shadow-primary-500/30',
+            'group_hover_shadow' => 'group-hover:shadow-primary-300',
+            'fill' => 'fill-primary-500',
+            'bg_500' => 'bg-primary-500',
+            'bg_500_10' => 'bg-primary-500/10',
+            'bg_500_20' => 'bg-primary-500/20',
+            'bg_400' => 'bg-primary-400',
         ],
         'salon' => [
             'primary' => 'purple',
@@ -58,30 +58,30 @@
             'bg_400' => 'bg-purple-400',
         ],
         'barbershop' => [
-            'primary' => 'blue',
-            'gradient_from' => 'from-blue-500',
-            'gradient_to' => 'to-blue-600',
-            'bg_light' => 'bg-blue-100',
-            'bg_50' => 'bg-blue-50',
-            'text' => 'text-blue-600',
-            'text_700' => 'text-blue-700',
-            'text_300' => 'text-blue-300',
-            'text_400' => 'text-blue-400',
-            'border' => 'border-blue-200',
-            'border_200' => 'border-blue-200',
-            'border_400' => 'border-blue-500',
-            'hover_bg' => 'hover:bg-blue-50',
-            'hover_text' => 'hover:text-blue-600',
-            'dark_hover_text' => 'dark:hover:text-blue-400',
-            'shadow' => 'shadow-blue-200',
-            'hover_shadow' => 'hover:shadow-blue-200',
-            'hover_shadow_xl' => 'hover:shadow-blue-500/30',
-            'group_hover_shadow' => 'group-hover:shadow-blue-300',
-            'fill' => 'fill-blue-500',
-            'bg_500' => 'bg-blue-500',
-            'bg_500_10' => 'bg-blue-500/10',
-            'bg_500_20' => 'bg-blue-500/20',
-            'bg_400' => 'bg-blue-400',
+            'primary' => 'slate',
+            'gradient_from' => 'from-slate-700',
+            'gradient_to' => 'to-slate-900',
+            'bg_light' => 'bg-slate-100',
+            'bg_50' => 'bg-slate-50',
+            'text' => 'text-slate-700',
+            'text_700' => 'text-slate-800',
+            'text_300' => 'text-slate-300',
+            'text_400' => 'text-slate-400',
+            'border' => 'border-slate-200',
+            'border_200' => 'border-slate-200',
+            'border_400' => 'border-slate-500',
+            'hover_bg' => 'hover:bg-slate-50',
+            'hover_text' => 'hover:text-slate-700',
+            'dark_hover_text' => 'dark:hover:text-slate-400',
+            'shadow' => 'shadow-slate-200',
+            'hover_shadow' => 'hover:shadow-slate-200',
+            'hover_shadow_xl' => 'hover:shadow-slate-500/30',
+            'group_hover_shadow' => 'group-hover:shadow-slate-300',
+            'fill' => 'fill-slate-700',
+            'bg_500' => 'bg-slate-700',
+            'bg_500_10' => 'bg-slate-700/10',
+            'bg_500_20' => 'bg-slate-700/20',
+            'bg_400' => 'bg-slate-500',
         ],
     ];
 
@@ -100,7 +100,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                         </svg>
                     </div>
-                    <span class="text-2xl font-display font-bold text-gray-900">{{ brand_name() ?: 'GlowUp' }}</span>
+                    <span class="text-2xl font-display font-bold text-gray-900">{{ brand_name() ?: 'Velucia' }}</span>
                 </a>
 
                 <!-- Desktop Menu (Left aligned) -->
@@ -184,9 +184,9 @@
                     <a href="{{ route('booking.index') }}" class="px-5 py-2.5 border-2 {{ $lt->border_400 }} {{ $lt->text }} font-medium text-sm rounded-full {{ $lt->hover_bg }} transition-all whitespace-nowrap">
                         {{ __('landing.nav_book_now') }}
                     </a>
-                    <a href="https://jagoflutter.com/glowupclinic" target="_blank" class="px-5 py-2.5 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold text-sm rounded-full hover:shadow-lg {{ $lt->hover_shadow }} transition-all hover:-translate-y-0.5 whitespace-nowrap">
+                    <!-- <a href="https://github.com/afebrii/clinic-glowup-web-feature-multi-business-type" target="_blank" class="px-5 py-2.5 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold text-sm rounded-full hover:shadow-lg {{ $lt->hover_shadow }} transition-all hover:-translate-y-0.5 whitespace-nowrap">
                         {{ __('landing.nav_get_sourcecode') }}
-                    </a>
+                    </a> -->
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -215,7 +215,7 @@
                     <a href="{{ route('booking.index') }}" class="block text-center px-6 py-3 border-2 {{ $lt->border_400 }} {{ $lt->text }} font-semibold rounded-full">{{ __('landing.nav_book_now') }}</a>
                     <a href="{{ route('portal.login') }}" class="block text-center text-gray-700 font-medium py-2">{{ __('landing.nav_customer_portal') }}</a>
                     <a href="{{ route('login') }}" class="block text-center text-gray-700 font-medium py-2">{{ __('landing.nav_login') }}</a>
-                    <a href="https://jagoflutter.com/glowupclinic" target="_blank" class="block text-center px-6 py-3 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full">{{ __('landing.nav_get_sourcecode') }}</a>
+                    <!-- <a href="https://github.com/afebrii/clinic-glowup-web-feature-multi-business-type" target="_blank" class="block text-center px-6 py-3 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full">{{ __('landing.nav_get_sourcecode') }}</a> -->
                 </div>
             </div>
         </div>
@@ -243,12 +243,12 @@
                     </p>
 
                     <div class="mt-6 flex flex-row max-sm:flex-col gap-4 animate-fade-in-up stagger-4">
-                        <a href="https://jagoflutter.com/glowupclinic" target="_blank" class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow }}/50 transition-all hover:-translate-y-1">
+                        <!-- <a href="https://github.com/afebrii/clinic-glowup-web-feature-multi-business-type" target="_blank" class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow }}/50 transition-all hover:-translate-y-1">
                             {{ __('landing.hero_cta') }}
                             <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                             </svg>
-                        </a>
+                        </a> -->
                         <a href="#solutions" class="group inline-flex items-center justify-center px-8 py-4 border-2 {{ $lt->border_200 }} text-gray-700 font-semibold rounded-full hover:{{ $lt->border_400 }} {{ $lt->hover_bg }} transition-all">
                             <svg class="mr-2 w-5 h-5 {{ $lt->text }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
@@ -292,7 +292,7 @@
                                 <div class="relative w-72 max-lg:w-56 max-sm:w-40 transform -rotate-3">
                                     <div class="bg-gray-900 rounded-[1.5rem] max-lg:rounded-[1.2rem] max-sm:rounded-[0.8rem] p-1.5 max-sm:p-1 shadow-2xl shadow-gray-900/30">
                                         <div class="bg-black rounded-[1.2rem] max-lg:rounded-[1rem] max-sm:rounded-[0.6rem] overflow-hidden">
-                                            <img src="{{ asset('images/tablet/2.png') }}" alt="GlowUp Tablet App - Dashboard" class="w-full">
+                                            <img src="{{ asset('images/tablet/2.png') }}" alt="Velucia Tablet App - Dashboard" class="w-full">
                                         </div>
                                     </div>
                                     <!-- Tablet Label -->
@@ -305,9 +305,9 @@
                             <!-- Phone (Right, front) -->
                             <div class="relative z-20 animate-fade-in-up -ml-8 max-lg:-ml-6 max-sm:-ml-4" style="animation-delay: 0.5s;">
                                 <div class="relative w-44 max-lg:w-36 max-sm:w-28">
-                                    <div class="bg-gray-900 rounded-[2.5rem] max-lg:rounded-[2rem] max-sm:rounded-[1.5rem] p-2 max-sm:p-1.5 shadow-2xl shadow-gray-900/40 ring-2 ring-rose-500/20">
+                                    <div class="bg-gray-900 rounded-[2.5rem] max-lg:rounded-[2rem] max-sm:rounded-[1.5rem] p-2 max-sm:p-1.5 shadow-2xl shadow-gray-900/40 ring-2 ring-primary-500/20">
                                         <div class="bg-black rounded-[2rem] max-lg:rounded-[1.6rem] max-sm:rounded-[1.2rem] overflow-hidden">
-                                            <img src="{{ asset('images/phone/2.png') }}" alt="GlowUp Mobile App - Dashboard" class="w-full">
+                                            <img src="{{ asset('images/phone/2.png') }}" alt="Velucia Mobile App - Dashboard" class="w-full">
                                         </div>
                                     </div>
                                     <!-- Phone Label -->
@@ -491,8 +491,8 @@
 
                 <!-- Feature 5 - Small -->
                 <div class="col-span-4 max-lg:col-span-1 group bg-white rounded-2xl p-8 border border-gray-100 {{ $lt->border_200 }} hover:shadow-lg transition-all duration-300">
-                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
@@ -556,7 +556,7 @@
 
                         <!-- Phone 2 (Main - Larger) -->
                         <div class="w-40 max-sm:w-32 z-10">
-                            <div class="bg-gray-800 rounded-4xl max-sm:rounded-3xl p-1.5 shadow-2xl ring-2 ring-rose-500/30">
+                            <div class="bg-gray-800 rounded-4xl max-sm:rounded-3xl p-1.5 shadow-2xl ring-2 ring-primary-500/30">
                                 <div class="bg-black rounded-[1.7rem] max-sm:rounded-2xl overflow-hidden">
                                     <img src="{{ asset('images/phone/2.png') }}" alt="Dashboard" class="w-full">
                                 </div>
@@ -621,7 +621,7 @@
                     <div class="relative">
                         <!-- Main Tablet -->
                         <div class="relative mx-auto max-w-lg">
-                            <div class="bg-gray-800 rounded-3xl max-sm:rounded-2xl p-2 max-sm:p-1.5 shadow-2xl ring-2 ring-rose-500/30">
+                            <div class="bg-gray-800 rounded-3xl max-sm:rounded-2xl p-2 max-sm:p-1.5 shadow-2xl ring-2 ring-primary-500/30">
                                 <div class="bg-black rounded-2xl max-sm:rounded-xl overflow-hidden">
                                     <img src="{{ asset('images/tablet/2.png') }}" alt="Tablet Dashboard" class="w-full">
                                 </div>
@@ -704,14 +704,14 @@
             </div>
 
             <!-- CTA -->
-            <div class="text-center mt-12">
-                <a href="https://jagoflutter.com/glowupclinic" target="_blank" class="inline-flex items-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow_xl }} transition-all hover:-translate-y-1">
+            <!-- <div class="text-center mt-12">
+                <a href="https://github.com/afebrii/clinic-glowup-web-feature-multi-business-type" target="_blank" class="inline-flex items-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow_xl }} transition-all hover:-translate-y-1">
                     Dapatkan Full Sourcecode
                     <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -872,14 +872,14 @@
                 </div>
             </div>
 
-            <div class="text-center mt-12">
-                <a href="https://jagoflutter.com/glowupclinic" target="_blank" class="inline-flex items-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow_xl }} transition-all hover:-translate-y-1">
+            <!-- <div class="text-center mt-12">
+                <a href="https://github.com/afebrii/clinic-glowup-web-feature-multi-business-type" target="_blank" class="inline-flex items-center px-8 py-4 bg-gradient-to-r {{ $lt->gradient_from }} {{ $lt->gradient_to }} text-white font-semibold rounded-full hover:shadow-xl {{ $lt->hover_shadow_xl }} transition-all hover:-translate-y-1">
                     {{ __('landing.solutions_cta') }}
                     <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -1027,7 +1027,7 @@
         </div>
     </section>
 
-    <!-- Contact CTA Section -->
+    <!-- Contact CTA Section
     <section id="contact" class="py-24 relative z-10">
         <div class="max-w-4xl mx-auto px-8 max-lg:px-6 max-sm:px-4">
             <div class="bg-gray-900 rounded-3xl p-16 max-md:p-10 text-center">
@@ -1055,7 +1055,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="bg-gray-900 py-16 max-sm:py-10 relative z-10">
@@ -1100,9 +1100,9 @@
                 <div class="max-sm:col-span-1">
                     <h4 class="text-white font-semibold text-sm mb-3">{{ __('landing.footer_contact') }}</h4>
                     <ul class="space-y-2">
-                        <li><a href="mailto:hello@jagoflutter.com" class="text-gray-400 hover:text-white transition-colors text-sm break-all">hello@jagoflutter.com</a></li>
-                        <li><a href="https://wa.me/6285640899224" class="text-gray-400 hover:text-white transition-colors text-sm">+62 856-4089-9224</a></li>
-                        <li><span class="text-gray-400 text-sm">Sleman, Yogyakarta</span></li>
+                        <li><a href="mailto:andikafebriansyah755@gmail.com" class="text-gray-400 hover:text-white transition-colors text-sm break-all">andikafebriansyah755@gmail.com</a></li>
+                        <li><a href="https://wa.me/6282216796892" class="text-gray-400 hover:text-white transition-colors text-sm">+62 822-1679-6892</a></li>
+                        <li><span class="text-gray-400 text-sm">Tasikmalaya, Jawa Barat</span></li>
                     </ul>
                 </div>
             </div>

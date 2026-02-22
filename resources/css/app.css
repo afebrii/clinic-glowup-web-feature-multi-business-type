@@ -10,46 +10,76 @@
 
 @theme {
     /* Font Families */
-    --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+    --font-sans: 'Jost', 'DM Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Cormorant Garamond', 'Playfair Display', ui-serif, Georgia, serif;
 
-    /* Primary Colors - Rose (GlowUp Brand) */
-    --color-primary-50: #fdf4f3;
-    --color-primary-100: #fce8e6;
-    --color-primary-200: #f9d5d2;
-    --color-primary-300: #f4b5ae;
-    --color-primary-400: #ec8b81;
-    --color-primary-500: #e06456;
-    --color-primary-600: #cc4637;
-    --color-primary-700: #ab372a;
-    --color-primary-800: #8e3127;
-    --color-primary-900: #772e26;
+    /* Primary Colors - Deep Plum (Velucia Brand) */
+    --color-primary-50: #f5f0f4;
+    --color-primary-100: #e8dce6;
+    --color-primary-200: #d0b8cc;
+    --color-primary-300: #b090ae;
+    --color-primary-400: #8d6888;
+    --color-primary-500: #5D4157;
+    --color-primary-600: #4a3346;
+    --color-primary-700: #3a2838;
+    --color-primary-800: #2d1f2b;
+    --color-primary-900: #22181f;
 
-    /* Background Tones */
-    --color-cream: #FFF9F5;
-    --color-peach: #FFEEE8;
+    /* Brand Accent & Background Tones */
+    --color-sage: #A8CABA;
+    --color-sand: #F4E7D3;
+    --color-cream: #FAF5F0;
 }
 
 /* Custom Animations */
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInLeft {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes pulse-soft {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
 }
 
 .animate-float {
@@ -69,15 +99,34 @@
 }
 
 /* Stagger animations */
-.stagger-1 { animation-delay: 0.1s; opacity: 0; }
-.stagger-2 { animation-delay: 0.2s; opacity: 0; }
-.stagger-3 { animation-delay: 0.3s; opacity: 0; }
-.stagger-4 { animation-delay: 0.4s; opacity: 0; }
-.stagger-5 { animation-delay: 0.5s; opacity: 0; }
+.stagger-1 {
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+.stagger-2 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.stagger-3 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.stagger-4 {
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.stagger-5 {
+    animation-delay: 0.5s;
+    opacity: 0;
+}
 
 /* Gradient text */
 .gradient-text {
-    background: linear-gradient(135deg, #e11d48 0%, #f43f5e 50%, #fb7185 100%);
+    background: linear-gradient(135deg, #5D4157 0%, #7a5571 50%, #A8CABA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -106,16 +155,16 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #fdf4f3;
+    background: #f5f0f4;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #fda4af;
+    background: #b090ae;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #fb7185;
+    background: #5D4157;
 }
 
 /* Sidebar transition */
@@ -218,8 +267,8 @@ input[type="search"]:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #f43f5e;
-    box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
+    border-color: #5D4157;
+    box-shadow: 0 0 0 3px rgba(93, 65, 87, 0.15);
 }
 
 input::placeholder,
@@ -249,8 +298,8 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-    background-color: #f43f5e;
-    border-color: #f43f5e;
+    background-color: #5D4157;
+    border-color: #5D4157;
 }
 
 input[type="checkbox"]:checked {
@@ -270,7 +319,7 @@ input[type="radio"]:checked {
 input[type="checkbox"]:focus,
 input[type="radio"]:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
+    box-shadow: 0 0 0 3px rgba(93, 65, 87, 0.15);
 }
 
 /* Select dropdown arrow */

@@ -11,10 +11,10 @@ class SettingSeeder extends Seeder
     {
         $settings = [
             // General
-            ['key' => 'clinic_name', 'value' => 'GlowUp Clinic', 'type' => 'string'],
+            ['key' => 'clinic_name', 'value' => 'Velucia Clinic', 'type' => 'string'],
             ['key' => 'clinic_address', 'value' => 'Jl. Palagan Tentara Pelajar No.27, Jongkang, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581', 'type' => 'string'],
             ['key' => 'clinic_phone', 'value' => '6285640899224', 'type' => 'string'],
-            ['key' => 'clinic_email', 'value' => 'hello@jagoflutter.com', 'type' => 'string'],
+            ['key' => 'clinic_email', 'value' => 'hello@gmail.com', 'type' => 'string'],
             ['key' => 'clinic_logo', 'value' => null, 'type' => 'string'],
 
             // Transaction

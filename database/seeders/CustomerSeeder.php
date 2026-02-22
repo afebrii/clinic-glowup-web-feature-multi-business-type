@@ -13,7 +13,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Rina Wijaya',
                 'phone' => '081234567890',
-                'email' => 'rina@jagoflutter.com',
+                'email' => 'rina@gmail.com',
                 'birthdate' => '1990-03-15',
                 'gender' => 'female',
                 'address' => 'Jl. Sudirman No. 123, Jakarta Pusat',
@@ -24,7 +24,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Siti Aminah',
                 'phone' => '081398765432',
-                'email' => 'siti@jagoflutter.com',
+                'email' => 'siti@gmail.com',
                 'birthdate' => '1988-07-22',
                 'gender' => 'female',
                 'address' => 'Jl. Gatot Subroto No. 45, Jakarta Selatan',
@@ -35,7 +35,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Dewi Kartika',
                 'phone' => '081512345678',
-                'email' => 'dewi@jagoflutter.com',
+                'email' => 'dewi@gmail.com',
                 'birthdate' => '1995-11-30',
                 'gender' => 'female',
                 'address' => 'Jl. Rasuna Said No. 78, Jakarta Selatan',
@@ -46,7 +46,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Anisa Putri',
                 'phone' => '081287654321',
-                'email' => 'anisa@jagoflutter.com',
+                'email' => 'anisa@gmail.com',
                 'birthdate' => '1992-05-18',
                 'gender' => 'female',
                 'address' => 'Jl. Thamrin No. 56, Jakarta Pusat',
@@ -57,7 +57,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Maya Sari',
                 'phone' => '081365432109',
-                'email' => 'maya.s@jagoflutter.com',
+                'email' => 'maya.s@gmail.com',
                 'birthdate' => '1985-09-08',
                 'gender' => 'female',
                 'address' => 'Jl. Kuningan No. 12, Jakarta Selatan',
@@ -68,7 +68,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Fitri Handayani',
                 'phone' => '082145678901',
-                'email' => 'fitri.h@jagoflutter.com',
+                'email' => 'fitri.h@gmail.com',
                 'birthdate' => '1993-01-25',
                 'gender' => 'female',
                 'address' => 'Jl. Kemang Raya No. 88, Jakarta Selatan',
@@ -79,7 +79,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Ratna Dewi',
                 'phone' => '082234567890',
-                'email' => 'ratna.d@jagoflutter.com',
+                'email' => 'ratna.d@gmail.com',
                 'birthdate' => '1987-06-12',
                 'gender' => 'female',
                 'address' => 'Jl. Senopati No. 33, Jakarta Selatan',
@@ -90,7 +90,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Linda Kusuma',
                 'phone' => '082398765432',
-                'email' => 'linda.k@jagoflutter.com',
+                'email' => 'linda.k@gmail.com',
                 'birthdate' => '1991-12-03',
                 'gender' => 'female',
                 'address' => 'Jl. Blok M No. 15, Jakarta Selatan',
@@ -101,7 +101,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Yuni Astuti',
                 'phone' => '081356789012',
-                'email' => 'yuni.a@jagoflutter.com',
+                'email' => 'yuni.a@gmail.com',
                 'birthdate' => '1994-08-19',
                 'gender' => 'female',
                 'address' => 'Jl. Pondok Indah No. 22, Jakarta Selatan',
@@ -112,7 +112,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Dian Purnama',
                 'phone' => '081445678901',
-                'email' => 'dian.p@jagoflutter.com',
+                'email' => 'dian.p@gmail.com',
                 'birthdate' => '1989-04-07',
                 'gender' => 'female',
                 'address' => 'Jl. Kelapa Gading No. 56, Jakarta Utara',
@@ -123,7 +123,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Budi Santoso',
                 'phone' => '081567890123',
-                'email' => 'budi.s@jagoflutter.com',
+                'email' => 'budi.s@gmail.com',
                 'birthdate' => '1986-10-14',
                 'gender' => 'male',
                 'address' => 'Jl. PIK No. 77, Jakarta Utara',
@@ -134,7 +134,7 @@ class CustomerSeeder extends Seeder
             [
                 'name' => 'Reza Pratama',
                 'phone' => '081678901234',
-                'email' => 'reza.p@jagoflutter.com',
+                'email' => 'reza.p@gmail.com',
                 'birthdate' => '1990-02-28',
                 'gender' => 'male',
                 'address' => 'Jl. Menteng No. 44, Jakarta Pusat',

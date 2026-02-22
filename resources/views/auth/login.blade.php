@@ -22,7 +22,7 @@
         {!! brand_custom_script('head') !!}
     @endif
 </head>
-<body class="min-h-screen bg-gradient-to-br from-rose-50 via-white to-orange-50" x-data="{ showPassword: false }">
+<body class="min-h-screen bg-gradient-to-br from-primary-50 via-white to-sand" x-data="{ showPassword: false }">
     <div class="min-h-screen flex items-center justify-center p-4">
         <div class="w-full max-w-md">
             <!-- Language Switcher -->
@@ -65,8 +65,8 @@
                             type="email"
                             id="email"
                             name="email"
-                            value="{{ old('email', 'owner@jagoflutter.com') }}"
-                            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-400 transition @error('email') border-red-400 @enderror"
+                            value="{{ old('email', 'owner@gmail.com') }}"
+                            class="w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-400 transition @error('email') border-red-400 @enderror"
                             placeholder="email@example.com"
                             required
                             autofocus
@@ -84,7 +84,7 @@
                                 :type="showPassword ? 'text' : 'password'"
                                 id="password"
                                 name="password"
-                                value="password"
+                                value="12345678"
                                 class="w-full px-4 py-3 pr-12 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-400 transition @error('password') border-red-400 @enderror"
                                 placeholder="{{ __('auth.enter_password') }}"
                                 required
@@ -114,7 +114,7 @@
                             type="checkbox"
                             id="remember"
                             name="remember"
-                            class="w-4 h-4 text-rose-500 border-gray-300 rounded focus:ring-rose-500/20"
+                            class="w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500/20"
                         >
                         <label for="remember" class="ml-2 text-sm text-gray-600">{{ __('auth.remember_me') }}</label>
                     </div>
@@ -122,7 +122,7 @@
                     <!-- Submit -->
                     <button
                         type="submit"
-                        class="w-full py-3 px-4 bg-gradient-to-r from-rose-400 to-rose-500 text-white font-semibold rounded-xl hover:from-rose-500 hover:to-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500/50 transition shadow-lg shadow-rose-200/50 hover:shadow-rose-300/50"
+                        class="w-full py-3 px-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:from-primary-600 hover:to-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500/50 transition shadow-lg shadow-primary-200/50 hover:shadow-primary-300/50"
                     >
                         {{ __('auth.login') }}
                     </button>
@@ -133,15 +133,15 @@
             <div class="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-xl">
                 <p class="text-sm font-medium text-amber-800 mb-2">{{ __('auth.demo_credentials') }}:</p>
                 <div class="text-xs text-amber-700 space-y-1">
-                    <p><span class="font-medium">{{ __('auth.owner') }}:</span> owner@jagoflutter.com</p>
-                    <p><span class="font-medium">{{ __('auth.admin') }}:</span> admin@jagoflutter.com</p>
-                    <p><span class="font-medium">{{ __('auth.password') }}:</span> password</p>
+                    <p><span class="font-medium">{{ __('auth.owner') }}:</span> owner@gmail.com</p>
+                    <p><span class="font-medium">{{ __('auth.admin') }}:</span> admin@gmail.com</p>
+                    <p><span class="font-medium">{{ __('auth.password') }}:</span> 12345678</p>
                 </div>
             </div>
 
             <!-- Footer -->
             <p class="text-center text-sm text-gray-500 mt-6">
-                {{ brand_copyright() }} @if(brand('footer.show_powered_by', true)) Powered by <a href="{{ brand('footer.powered_by_url', 'https://glowup.app') }}" target="_blank" class="{{ $tc->link ?? 'text-rose-500 hover:text-rose-600' }}">{{ brand('footer.powered_by_text', 'GlowUp') }}</a>@endif
+                {{ brand_copyright() }} @if(brand('footer.show_powered_by', true)) Powered by <a href="{{ brand('footer.powered_by_url', 'https://velucia.app') }}" target="_blank" class="{{ $tc->link ?? 'text-primary-500 hover:text-primary-600' }}">{{ brand('footer.powered_by_text', 'Velucia') }}</a>@endif
             </p>
         </div>
     </div>

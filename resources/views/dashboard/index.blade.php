@@ -7,23 +7,23 @@
     // Theme-based classes
     $accentColor = match($businessType ?? 'clinic') {
         'salon' => 'purple',
-        'barbershop' => 'blue',
-        default => 'rose',
+        'barbershop' => 'slate',
+        default => 'primary',
     };
     $linkClass = match($businessType ?? 'clinic') {
         'salon' => 'text-purple-500 hover:text-purple-600',
-        'barbershop' => 'text-blue-500 hover:text-blue-600',
-        default => 'text-rose-500 hover:text-rose-600',
+        'barbershop' => 'text-slate-600 hover:text-slate-800',
+        default => 'text-primary-500 hover:text-primary-600',
     };
     $badgeBgClass = match($businessType ?? 'clinic') {
         'salon' => 'bg-purple-100',
-        'barbershop' => 'bg-blue-100',
-        default => 'bg-rose-100',
+        'barbershop' => 'bg-slate-100',
+        default => 'bg-primary-100',
     };
     $badgeTextClass = match($businessType ?? 'clinic') {
         'salon' => 'text-purple-600',
-        'barbershop' => 'text-blue-600',
-        default => 'text-rose-600',
+        'barbershop' => 'text-slate-700',
+        default => 'text-primary-600',
     };
 @endphp
 
@@ -68,8 +68,8 @@
                     <p class="text-xs text-gray-500 dark:text-gray-400 truncate">{{ __('dashboard.appointments') }}</p>
                     <p class="text-lg max-sm:text-base font-bold text-gray-900 dark:text-gray-100 mt-0.5">{{ $stats['appointments_today'] }}</p>
                 </div>
-                <div class="w-9 h-9 max-sm:w-8 max-sm:h-8 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-9 h-9 max-sm:w-8 max-sm:h-8 bg-primary-100 dark:bg-primary-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
                 </div>
@@ -277,7 +277,7 @@
                                     $statusColors = [
                                         'pending' => 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
                                         'confirmed' => 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
-                                        'in_progress' => 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400',
+                                        'in_progress' => 'bg-teal-100 text-teal-700 dark:bg-teal-900/50 dark:text-teal-400',
                                         'completed' => 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
                                         'cancelled' => 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400',
                                         'no_show' => 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400',
@@ -292,7 +292,7 @@
                                     @if($appointment->status === 'pending')
                                         <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-xs font-medium">{{ __('appointment.confirm_action') }}</button>
                                     @elseif($appointment->status === 'confirmed')
-                                        <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-xs font-medium">{{ __('dashboard.start') }}</button>
+                                        <button class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-xs font-medium">{{ __('dashboard.start') }}</button>
                                     @elseif($appointment->status === 'in_progress')
                                         <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-xs font-medium">{{ __('dashboard.complete') }}</button>
                                     @endif
@@ -319,7 +319,7 @@
                     $statusColors = [
                         'pending' => 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
                         'confirmed' => 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
-                        'in_progress' => 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400',
+                        'in_progress' => 'bg-teal-100 text-teal-700 dark:bg-teal-900/50 dark:text-teal-400',
                         'completed' => 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
                         'cancelled' => 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400',
                         'no_show' => 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400',
@@ -348,7 +348,7 @@
                         @if($appointment->status === 'pending')
                             <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-xs font-medium">{{ __('appointment.confirm_action') }}</button>
                         @elseif($appointment->status === 'confirmed')
-                            <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-xs font-medium">{{ __('dashboard.start') }}</button>
+                            <button class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 text-xs font-medium">{{ __('dashboard.start') }}</button>
                         @elseif($appointment->status === 'in_progress')
                             <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-xs font-medium">{{ __('dashboard.complete') }}</button>
                         @endif
@@ -375,9 +375,9 @@
 
     // Theme colors based on business type
     const chartColors = {
-        'clinic': { bg: 'rgba(244, 63, 94, 0.8)', border: 'rgba(244, 63, 94, 1)' },
-        'salon': { bg: 'rgba(168, 85, 247, 0.8)', border: 'rgba(168, 85, 247, 1)' },
-        'barbershop': { bg: 'rgba(59, 130, 246, 0.8)', border: 'rgba(59, 130, 246, 1)' }
+        'clinic':     { bg: 'rgba(93, 65, 87, 0.75)',  border: 'rgba(93, 65, 87, 1)' },
+        'salon':      { bg: 'rgba(168, 85, 247, 0.8)', border: 'rgba(168, 85, 247, 1)' },
+        'barbershop': { bg: 'rgba(71, 85, 105, 0.8)',  border: 'rgba(71, 85, 105, 1)' }
     };
     const businessType = '{{ $businessType ?? "clinic" }}';
     const colors = chartColors[businessType] || chartColors['clinic'];

@@ -11,8 +11,8 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Owner',
-            'email' => 'owner@jagoflutter.com',
-            'password' => bcrypt('password'),
+            'email' => 'owner@gmail.com',
+            'password' => bcrypt('12345678'),
             'role' => 'owner',
             'phone' => '081234567890',
             'is_active' => true,
@@ -20,8 +20,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Admin',
-            'email' => 'admin@jagoflutter.com',
-            'password' => bcrypt('password'),
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('12345678'),
             'role' => 'admin',
             'phone' => '081234567891',
             'is_active' => true,
@@ -29,8 +29,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Maya',
-            'email' => 'maya@jagoflutter.com',
-            'password' => bcrypt('password'),
+            'email' => 'maya@gmail.com',
+            'password' => bcrypt('12345678'),
             'role' => 'beautician',
             'phone' => '081234567892',
             'is_active' => true,
@@ -38,8 +38,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Lisa',
-            'email' => 'lisa@jagoflutter.com',
-            'password' => bcrypt('password'),
+            'email' => 'lisa@gmail.com',
+            'password' => bcrypt('12345678'),
             'role' => 'beautician',
             'phone' => '081234567893',
             'is_active' => true,
@@ -47,8 +47,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Dr. Sarah',
-            'email' => 'sarah@jagoflutter.com',
-            'password' => bcrypt('password'),
+            'email' => 'sarah@gmail.com',
+            'password' => bcrypt('12345678'),
             'role' => 'beautician',
             'phone' => '081234567894',
             'is_active' => true,

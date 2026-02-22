@@ -1,11 +1,11 @@
 {
-    "name": "GlowUp Clinic",
-    "short_name": "GlowUp",
-    "description": "Modern beauty clinic management system",
+    "name": "Velucia",
+    "short_name": "Velucia",
+    "description": "Modern beauty & wellness management system",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#e11d48",
+    "background_color": "#F4E7D3",
+    "theme_color": "#5D4157",
     "orientation": "portrait-primary",
     "icons": [
         {
@@ -57,7 +57,11 @@
             "purpose": "any maskable"
         }
     ],
-    "categories": ["business", "health", "lifestyle"],
+    "categories": [
+        "business",
+        "health",
+        "lifestyle"
+    ],
     "screenshots": [],
     "shortcuts": [
         {

@@ -297,7 +297,7 @@
                         <label for="brand_footer_powered_by_text" class="block text-sm font-medium text-gray-700 dark:text-gray-300">{{ __('setting.powered_by_text') }}</label>
                         <input type="text" name="brand_footer_powered_by_text" id="brand_footer_powered_by_text"
                                value="{{ old('brand_footer_powered_by_text', $settings['brand_footer_powered_by_text']) }}"
-                               placeholder="GlowUp"
+                               placeholder="Velucia"
                                class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm focus:ring-2 {{ $tc->ring ?? 'focus:ring-rose-500/20' }} focus:border-{{ $tc->primary ?? 'rose' }}-400">
                         @error('brand_footer_powered_by_text')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -307,7 +307,7 @@
                         <label for="brand_footer_powered_by_url" class="block text-sm font-medium text-gray-700 dark:text-gray-300">{{ __('setting.powered_by_url') }}</label>
                         <input type="url" name="brand_footer_powered_by_url" id="brand_footer_powered_by_url"
                                value="{{ old('brand_footer_powered_by_url', $settings['brand_footer_powered_by_url']) }}"
-                               placeholder="https://glowup.app"
+                               placeholder="https://velucia.app"
                                class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm focus:ring-2 {{ $tc->ring ?? 'focus:ring-rose-500/20' }} focus:border-{{ $tc->primary ?? 'rose' }}-400">
                         @error('brand_footer_powered_by_url')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -357,7 +357,7 @@
 
         <!-- Submit Button -->
         <div class="flex justify-end">
-            <button type="submit" class="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2 rounded-lg font-medium transition cursor-pointer">
+            <button type="submit" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition cursor-pointer">
                 {{ __('common.save_changes') }}
             </button>
         </div>
