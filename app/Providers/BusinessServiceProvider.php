@@ -65,6 +65,10 @@ class BusinessServiceProvider extends ServiceProvider
                     'ring' => 'focus:ring-rose-500/20 focus:border-rose-400',
                     'gradient' => 'from-rose-400 to-rose-500',
                     'checkbox' => 'text-rose-500',
+                    'bgLight' => 'bg-rose-50',
+                    'bgMedium' => 'bg-rose-200',
+                    'iconColor' => 'text-rose-500',
+                    'borderActive' => 'border-rose-500',
                 ],
                 'salon' => [
                     'primary' => 'purple',
@@ -81,6 +85,10 @@ class BusinessServiceProvider extends ServiceProvider
                     'ring' => 'focus:ring-purple-500/20 focus:border-purple-400',
                     'gradient' => 'from-purple-400 to-purple-500',
                     'checkbox' => 'text-purple-500',
+                    'bgLight' => 'bg-purple-50',
+                    'bgMedium' => 'bg-purple-200',
+                    'iconColor' => 'text-purple-500',
+                    'borderActive' => 'border-purple-500',
                 ],
                 'barbershop' => [
                     'primary' => 'blue',
@@ -97,6 +105,10 @@ class BusinessServiceProvider extends ServiceProvider
                     'ring' => 'focus:ring-blue-500/20 focus:border-blue-400',
                     'gradient' => 'from-blue-400 to-blue-500',
                     'checkbox' => 'text-blue-500',
+                    'bgLight' => 'bg-blue-50',
+                    'bgMedium' => 'bg-blue-200',
+                    'iconColor' => 'text-blue-500',
+                    'borderActive' => 'border-blue-500',
                 ],
             ];
 

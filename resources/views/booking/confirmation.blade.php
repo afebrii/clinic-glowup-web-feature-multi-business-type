@@ -51,17 +51,17 @@
 
                 <!-- Staff (if assigned) -->
                 @if($appointment->staff)
-                    <div class="flex items-start gap-4">
-                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-500">{{ business_staff_label() }}</p>
-                            <p class="font-semibold text-gray-900">{{ $appointment->staff->name }}</p>
-                        </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
                     </div>
+                    <div>
+                        <p class="text-sm text-gray-500">{{ business_staff_label() }}</p>
+                        <p class="font-semibold text-gray-900">{{ $appointment->staff->name }}</p>
+                    </div>
+                </div>
                 @endif
 
                 <!-- Customer -->
@@ -109,34 +109,37 @@
 
         <!-- Actions -->
         <div class="mt-6 space-y-3">
-            <a href="{{ route('home') }}" class="block w-full text-center px-6 py-3 {{ $tc->button ?? 'bg-rose-500 hover:bg-rose-600' }} text-white font-medium rounded-xl transition">
+            <a href="{{ route('portal.dashboard') }}" class="block w-full text-center px-6 py-3 {{ $tc->button ?? 'bg-rose-500 hover:bg-rose-600' }} text-white font-medium rounded-xl transition">
                 {{ __('booking.back_to_home') }}
             </a>
 
             @if(in_array($appointment->status, ['pending', 'confirmed']))
-                <form action="{{ route('booking.cancel', $appointment) }}" method="POST" onsubmit="return confirm('{{ __('booking.cancel_confirm') }}')">
-                    @csrf
-                    <button type="submit" class="w-full text-center px-6 py-3 border border-red-300 text-red-600 font-medium rounded-xl hover:bg-red-50 transition">
-                        {{ __('booking.cancel_booking') }}
-                    </button>
-                </form>
+            @php
+            $confirmMsg = __('booking.cancel_confirm');
+            @endphp
+            <form action="{{ route('booking.cancel', $appointment) }}" method="POST" onsubmit="return confirm('{{ $confirmMsg }}')">
+                @csrf
+                <button type="submit" class="w-full text-center px-6 py-3 border border-red-300 text-red-600 font-medium rounded-xl hover:bg-red-50 transition">
+                    {{ __('booking.cancel_booking') }}
+                </button>
+            </form>
             @endif
         </div>
 
         <!-- Contact Info -->
         @if(brand_contact('phone') || brand_contact('whatsapp'))
-            <div class="mt-8 text-center text-sm text-gray-500">
-                <p>{{ __('booking.need_help') }}</p>
-                @if(brand_contact('whatsapp'))
-                    <a href="https://wa.me/{{ brand_contact('whatsapp') }}" target="_blank" class="{{ $tc->link ?? 'text-rose-500 hover:text-rose-600' }}">
-                        WhatsApp: {{ brand_contact('whatsapp') }}
-                    </a>
-                @elseif(brand_contact('phone'))
-                    <a href="tel:{{ brand_contact('phone') }}" class="{{ $tc->link ?? 'text-rose-500 hover:text-rose-600' }}">
-                        {{ brand_contact('phone') }}
-                    </a>
-                @endif
-            </div>
+        <div class="mt-8 text-center text-sm text-gray-500">
+            <p>{{ __('booking.need_help') }}</p>
+            @if(brand_contact('whatsapp'))
+            <a href="https://wa.me/{{ brand_contact('whatsapp') }}" target="_blank" class="{{ $tc->link ?? 'text-rose-500 hover:text-rose-600' }}">
+                WhatsApp: {{ brand_contact('whatsapp') }}
+            </a>
+            @elseif(brand_contact('phone'))
+            <a href="tel:{{ brand_contact('phone') }}" class="{{ $tc->link ?? 'text-rose-500 hover:text-rose-600' }}">
+                {{ brand_contact('phone') }}
+            </a>
+            @endif
+        </div>
         @endif
     </div>
 </div>
